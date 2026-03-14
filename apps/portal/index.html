@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AgentToolsHub Portal</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">AgentToolsHub</p>
+        <h1>能力管理页</h1>
+        <p class="summary">统一浏览当前仓库中的 Skill、MCP 与能力元数据。</p>
+      </header>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Registry</h2>
+          <p id="registry-meta">加载中...</p>
+        </div>
+        <div id="capability-list" class="grid"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>说明</h2>
+        </div>
+        <ul class="notes">
+          <li>当前页面读取 <code>../../registry/generated/index.json</code>。</li>
+          <li>如果页面直接通过 <code>file://</code> 打开导致读取失败，请使用本地静态服务器。</li>
+          <li>新增 capability 后，先运行 <code>python scripts/build_registry.py</code> 再刷新页面。</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

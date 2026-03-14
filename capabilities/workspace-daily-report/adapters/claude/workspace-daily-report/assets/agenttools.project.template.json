@@ -1,0 +1,46 @@
+{
+  "project": {
+    "id": "project-alpha",
+    "name": "Project Alpha"
+  },
+  "capabilities": {
+    "workspace-daily-report": {
+      "report_title": "Project Alpha 开发",
+      "ignore_globs": [
+        "UnityProject/Library/**",
+        "UnityProject/Temp/**",
+        "UnityProject/Logs/**"
+      ],
+      "module_rules": [
+        {
+          "module": "Runtime 功能",
+          "paths": [
+            "UnityProject/Packages",
+            "UnityProject/Assets/Scripts/Runtime"
+          ]
+        },
+        {
+          "module": "编辑器与工具",
+          "paths": [
+            "UnityProject/Assets/Editor",
+            "Tools"
+          ]
+        },
+        {
+          "module": "测试与稳定性",
+          "paths": [
+            "UnityProject/Assets/**/Tests",
+            "UnityProject/Packages/**/Tests"
+          ]
+        },
+        {
+          "module": "文档整理",
+          "paths": [
+            "Documentation",
+            "Docs"
+          ]
+        }
+      ]
+    }
+  }
+}

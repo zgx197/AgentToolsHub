@@ -1,0 +1,42 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vs/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.python-version
+
+# Node / Frontend
+node_modules/
+dist/
+build/
+.next/
+.vite/
+.cache/
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
+tmp/
+temp/
+coverage/
+
+# Env / secrets
+.env
+.env.*
+
+# Archive / generated local outputs
+registry/cache/
+apps/portal/.cache/

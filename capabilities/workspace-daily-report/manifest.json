@@ -1,0 +1,31 @@
+{
+  "id": "workspace-daily-report",
+  "name": "Workspace Daily Report",
+  "kind": "skill",
+  "source_type": "native",
+  "status": "draft",
+  "version": "0.1.0",
+  "description": "Generate detailed and brief Chinese developer daily reports from git history and working tree changes.",
+  "platforms": [
+    "cli",
+    "codex",
+    "claude",
+    "kimi"
+  ],
+  "tags": [
+    "daily-report",
+    "git",
+    "workspace",
+    "summary"
+  ],
+  "entrypoints": {
+    "core": "capabilities/workspace-daily-report/core/generate_daily_report.py",
+    "codex": "capabilities/workspace-daily-report/adapters/codex/workspace-daily-report",
+    "claude": "capabilities/workspace-daily-report/adapters/claude/workspace-daily-report",
+    "kimi": "capabilities/workspace-daily-report/adapters/kimi/README.md"
+  },
+  "docs": {
+    "readme": "capabilities/workspace-daily-report/README.md",
+    "config_schema": "capabilities/workspace-daily-report/configs/config-schema.md"
+  }
+}

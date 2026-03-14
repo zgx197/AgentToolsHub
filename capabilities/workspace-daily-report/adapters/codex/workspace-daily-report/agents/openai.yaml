@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workspace Daily Report"
+  short_description: "Generate detailed and brief dev daily reports"
+  default_prompt: "Use $workspace-daily-report to turn recent workspace code changes into a Chinese detailed report and a concise report."
